@@ -12,7 +12,7 @@ function event_timer(e)
 --	eq.set_proximity(e.self:GetX()-50, e.self:GetX()+50, e.self:GetY()-50, e.self:GetY()+50);
 	eq.set_proximity(-407-18, -407+18, 782-18, 782+18);
 	eq.zone_emote(15,"proximity set");
-	eq.zone_emote(15,"x range: " .. e.self:GetX()-50 .. " " .. e.self:GetX()+50 .. "y range: " .. e.self:GetY()-50 .. " " .. e.self:GetY()+50);
+	eq.zone_emote(15,"x range: " .. e.self:GetX()-18 .. " " .. e.self:GetX()+18 .. "y range: " .. e.self:GetY()-18 .. " " .. e.self:GetY()+18);
 	eq.enable_proximity_say();
 end
 
