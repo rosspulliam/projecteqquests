@@ -19,7 +19,7 @@ end
 function event_proximity_say(e)
 	local qglobals = eq.get_qglobals(e.other);
 	
-	if (e.message:findi("gems") and qglobals.wiz_epic == "1") then
+	if (qglobals.wiz_epic == "1" and e.message:findi("gems")) then
 		eq.zone_emote(15, "A voice booms from the center of the cauldron. These gems are sacred, important to our survival, you shall not have them.");
 		eq.spawn2(175306,525410,0,-334.12,-3.41,-37.06,10);
 		eq.depop_with_timer();
@@ -28,4 +28,4 @@ function event_proximity_say(e)
 	end
 end
 
--- 
+--
